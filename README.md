@@ -5,3 +5,4 @@ Bookmarklets to open map in fullscreen on various sites where that feature is mi
 
 Available for:
 * Garmin Connect
+* Eniro
