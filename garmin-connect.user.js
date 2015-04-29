@@ -7,4 +7,6 @@
 // @grant       none
 // ==/UserScript==
 
-jQuery.getScript('https://raw.githubusercontent.com/johanberonius/fullscreen-maps/master/garmin-connect.js');
+var script = document.createElement('script');
+script.src = 'https://raw.githubusercontent.com/johanberonius/fullscreen-maps/master/garmin-connect.js';
+document.getElementsByTagName('head')[0].appendChild(script);
