@@ -8,5 +8,5 @@
 // ==/UserScript==
 
 var script = document.createElement('script');
-script.src = 'https://raw.githubusercontent.com/johanberonius/fullscreen-maps/master/garmin-connect/splits.js';
+script.src = 'https://johanberonius.github.io/fullscreen-maps/garmin-connect/splits.js';
 document.getElementsByTagName('head')[0].appendChild(script);
