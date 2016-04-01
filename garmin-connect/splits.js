@@ -33,7 +33,7 @@ function addSplitTools() {
                 }
 
                 function formatTime(time) {
-                    var s = (time % 60).toFixed(2);
+                    var s = (time % 60).toFixed(0);
                     return Math.floor(time / 60) +':'+ (s < 10 ? '0' + s : s)
                 }
 
@@ -74,12 +74,12 @@ function addSplitTools() {
                 appendColumn(++column, 'Selected splits', 'count', 'int');
                 var time = appendColumn(++column, 'Time', 'sum', 'time');
                 appendColumn(++column, 'Ellapsed time', 'none', 'none');
-                appendColumn(++column, 'Moving time', 'sum', 'time');
+                var movingTime = appendColumn(++column, 'Moving time', 'sum', 'time');
                 var distance = appendColumn(++column, 'Distance', 'sum', 'float');
                 appendColumn(++column, 'Elevation gain', 'sum', 'int');
                 appendColumn(++column, 'Elevation loss', 'sum', 'int');
                 appendColumn(++column, 'Average pace', 'avg', 'time', time / distance);
-                appendColumn(++column, 'Average moving pace', 'avg', 'time');
+                appendColumn(++column, 'Average moving pace', 'avg', 'time', movingTime / distance);
                 appendColumn(++column, 'Best pace', 'min', 'time');
                 appendColumn(++column, 'Average heartrate', 'avg', 'int');
                 appendColumn(++column, 'Max heartrate', 'max', 'int');
@@ -87,7 +87,7 @@ function addSplitTools() {
                 appendColumn(++column, 'Max cadence', 'max', 'int');
                 appendColumn(++column, 'Average step length', 'avg', 'float');
                 appendColumn(++column, 'Average vertical oscillation', 'avg', 'float');
-                appendColumn(++column, 'Average ground contact time', 'avg', 'float');
+                appendColumn(++column, 'Average ground contact time', 'avg', 'int');
                 appendColumn(++column, 'Calories', 'sum', 'int');
 
                 event.preventDefault();
