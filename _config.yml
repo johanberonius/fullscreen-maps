@@ -1,4 +1,5 @@
 theme: jekyll-theme-slate
+title: Fullscreen Maps
 defaults:
   -
     scope:
