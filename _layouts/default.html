@@ -27,6 +27,15 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+
+        <nav>
+          <ul>
+          {% for page in site.html_pages %}
+            <li><a href="{{ page.url }}">{{ page.nav_title }}</a></li>
+          {% endfor %}
+          </ul>
+        </nav>
+
         {{ content }}
       </section>
     </div>

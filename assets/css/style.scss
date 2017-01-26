@@ -1,0 +1,26 @@
+---
+---
+
+@import "jekyll-theme-slate";
+
+#main_content {
+    position: relative;
+
+    > nav {
+        padding: 0.5em;
+
+        @media (min-width: 940px) {
+            position: absolute;
+            width: 100px;
+            right: 100%;
+            margin-top: 10px;
+            margin-right: 10px;
+            border: 1px solid #373737;
+            border-top-width: 12px;
+        }
+
+        > ul {
+            margin: 0;
+        }
+    }
+}
