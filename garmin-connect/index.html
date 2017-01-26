@@ -5,69 +5,60 @@ title: Fullscreen Map for Garmin Connect
 <h1>Fullscreen Map for Garmin Connect</h1>
 
 <p>
-This will add the missing feature to view the map in full screen on Garmin Connect activity pages.
-There are two alternative ways to use this, as a bookmarklet that can be selected each time you want to add a full screen button or as a
-user script that will run automatically every time you visit an activity page.
+    This will add the missing feature to view the map in fullscreen on Garmin Connect activity pages.
+    There are two alternative ways to use this, as a bookmarklet that can be selected each time you want to add a fullscreen button or as a
+    user script that will run automatically every time you visit an activity page.
 </p>
 
 <h2>Bookmarklet</h2>
 
     <h3>How to create the bookmarklet:</h3>
 
-        <p>Drag the link to your bookmark toolbar.</p>
+        <p>
+            Drag this link to your bookmark toolbar:
+            <a class="code" href="javascript:void(jQuery.getScript('https://johanberonius.github.io/fullscreen-maps/garmin-connect.js'))">Garmin Connect Fullscreen Map bookmarklet</a>
+        </p>
 
-        <a class="code" href="javascript:void(jQuery.getScript('https://johanberonius.github.io/fullscreen-maps/garmin-connect.js'))">Garmin Connect Fullscreen Map bookmarklet</a>
-
-        <p>Alternatively copy the link location or select and copy the code and create a bookmark in your browser using the text as the address for the bookmark.</p>
+        <p>Alternatively copy the link location or select and copy this code and create a bookmark in your browser using the text as the address for the bookmark.</p>
 
         <code>javascript:void(jQuery.getScript('https://johanberonius.github.io/fullscreen-maps/garmin-connect.js'))</code>
 
     <h3>How to use the bookmarklet:</h3>
 
         <p>
-        When you are at a Garmin Connect activity page (<a href="https://connect.garmin.com/activity/510662746">example</a>)
-        select the bookmarklet from your bookmark menu or bookmark toolbar.
-        A button will now be added to the controls on the map.
-        Click it to maximize the map to fill the entire screen.
-        To close the full screen map just press the escape key.
+            When you are at a Garmin Connect activity page (<a href="https://connect.garmin.com/modern/activity/510662746">example</a>)
+            select the bookmarklet from your bookmark menu or bookmark toolbar.
+            A button will now be added to the controls on the map.
+            Click it to maximize the map to fill the entire screen.
+            To close the full screen map just press the escape key.
         </p>
-
-        <p>
-        Now this also works with the new "modern" design on Garmin Connect activity pages.
-        (<a href="https://connect.garmin.com/modern/activity/510662746">example</a>)
-        </p>
-
-    <h3>What is a bookmarklet?</h3>
-
-        <p>Read about <a href="http://en.wikipedia.org/wiki/Bookmarklet">bookmarklets on Wikipedia</a></p>
 
 <h2>User Script</h2>
 
     <a class="code" href="https://johanberonius.github.io/fullscreen-maps/garmin-connect.user.js">Install Garmin Connect Fullscreen Map as a user script</a>
 
-    <h3>What is a user script?</h3>
-
-        <p>
-        Read about <a href="http://en.wikipedia.org/wiki/Greasemonkey">user scripts on Wikipedia</a>.
-        You will find the <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey add-on for Firefox here</a>
-        or the <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey extension for Chrome</a>.
-        </p>
-
+    <p>
+        The user script will run automatically every time you visit an activity page so there is no need to select a bookmarklet to add the fullscreen button.
+        Due to the way page loading is handled on Garmin Connect it might be necessary to open the activity page in a new tab or window.
+    </p>
 
 <h2>Bonus: Summarize splits</h2>
 
     <p>
-    As an extra feature, this bookmarklet will add a link to summarize selected splits from the list of splits in the left column on activity pages.
-    Click on rows to select or deselect any number of splits, then click the Summarize-link.
+        As an extra feature, this bookmarklet will add a link to summarize selected splits from the list of splits in the left column on activity pages.
+        Click on rows to select or deselect any number of splits, then click the Summarize-link.
     </p>
 
     <h3>Bookmarklet</h3>
 
+    <p>
         <a class="code" href="javascript:void(jQuery.getScript('https://johanberonius.github.io/fullscreen-maps/garmin-connect/splits.js'))">Garmin Connect Summarize splits</a>
+    </p>
 
-        <code>javascript:void(jQuery.getScript('https://johanberonius.github.io/fullscreen-maps/garmin-connect/splits.js'))</code>
+    <code>javascript:void(jQuery.getScript('https://johanberonius.github.io/fullscreen-maps/garmin-connect/splits.js'))</code>
 
     <h3>User Script</h3>
 
+    <p>
         <a class="code" href="https://johanberonius.github.io/fullscreen-maps/garmin-connect/splits.user.js">Install Garmin Connect Summarize Splits as a user script</a>
-
+    </p>
