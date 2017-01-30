@@ -7,20 +7,25 @@
     position: relative;
 
     > nav {
-        padding: 0.5em;
-
         @media (min-width: 940px) {
             position: absolute;
-            width: 100px;
+            box-sizing: border-box;
+            width: calc((100vw - 660px) / 2 - 2em);
+            max-width: 10em;
             right: 100%;
+            padding: 0.5em;
             margin-top: 10px;
-            margin-right: 10px;
+            margin-right: 1em;
             border: 1px solid #373737;
-            border-top-width: 12px;
+            border-top-width: 1em;
         }
 
         > ul {
             margin: 0;
+
+            > li + li {
+                margin-top: 0.3em;
+            }
         }
     }
 }
