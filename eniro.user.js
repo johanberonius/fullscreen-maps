@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Eniro Fullscreen Map
-// @namespace   http://kartor.eniro.se/
-// @include     http://kartor.eniro.se/*
+// @namespace   https://kartor.eniro.se/
+// @include     https://kartor.eniro.se/*
 // @version     1
 // @grant       none
 // ==/UserScript==
