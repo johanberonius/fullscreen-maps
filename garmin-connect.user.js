@@ -8,5 +8,5 @@
 // ==/UserScript==
 
 var script = document.createElement('script');
-script.src = 'https://johanberonius.github.io/fullscreen-maps/garmin-connect.js';
+script.src = 'https://git.beroni.us/fullscreen-maps/garmin-connect.js';
 document.getElementsByTagName('head')[0].appendChild(script);

@@ -7,5 +7,5 @@
 // ==/UserScript==
 
 var script = document.createElement('script');
-script.src = 'https://johanberonius.github.io/fullscreen-maps/eniro.js';
+script.src = 'https://git.beroni.us/fullscreen-maps/eniro.js';
 document.getElementsByTagName('head')[0].appendChild(script);
